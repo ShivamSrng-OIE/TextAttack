@@ -18,24 +18,24 @@ extras["docs"] = [
 ]
 # Packages required for formatting code & running tests.
 extras["test"] = [
-    "black==20.8b1",
+    "black",
     "docformatter",
-    "isort==5.6.4",
+    "isort",
     "flake8",
     "pytest",
     "pytest-xdist",
 ]
 
 extras["tensorflow"] = [
-    "tensorflow>=2.9.1",
+    "tensorflow",
     "tensorflow_hub",
-    "tensorflow_text>=2.9.0",
+    "tensorflow_text",
     "tensorboardX",
-    "tensorflow-estimator>=2.9.0",
+    "tensorflow-estimator",
 ]
 
 extras["optional"] = [
-    "sentence_transformers==2.2.0",
+    "sentence_transformers",
     "stanza",
     "visdom",
     "wandb",
@@ -79,5 +79,5 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.8",
-    install_requires=open("requirements.txt").readlines(),
+    install_requires=open("requirements.txt").readlines()
 )
